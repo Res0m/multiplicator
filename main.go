@@ -25,7 +25,7 @@ func main() {
 	}
 	log.Println(RTP)
 	// Нахождение параметра alpha для формулы
-	alpha := multiplier.GetAlphaRTP(RTP)
+	alpha := multiplier.FindAlpha(RTP, 0.01, 10.0, 1e-6)
 
 	//Определяем service
 	service := multiplier.NewMultiplierService(alpha)
