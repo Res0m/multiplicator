@@ -13,7 +13,7 @@ import (
 func main() {
 
 	// Работа с флагом
-	rtpStr := flag.String("rtp", "0,9", "RTP in (0, 1.0]")
+	rtpStr := flag.String("rtp", "0.9", "RTP in (0, 1.0]")
 	flag.Parse()
 	rtpFloat, err := strconv.ParseFloat(*rtpStr, 64)
 	if err != nil {
